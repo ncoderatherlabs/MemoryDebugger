@@ -20,7 +20,7 @@ def parse_memreport(input_file_path):
 
     stats = []
 
-    with open(input_file_path, 'r') as file:
+    with open(input_file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
         start_parsing = False
         for line in lines:

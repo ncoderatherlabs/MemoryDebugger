@@ -13,7 +13,7 @@ def extract_texture_report(source_file):
     target_file = os.path.join(source_file_dir, f"{source_file_name}.csv")
 
     # Read the content of the memreport file
-    with open(source_file, 'r') as file:
+    with open(source_file, 'r', encoding='utf-8') as file:
         file_content = file.read()
 
     # Match the texture report section
